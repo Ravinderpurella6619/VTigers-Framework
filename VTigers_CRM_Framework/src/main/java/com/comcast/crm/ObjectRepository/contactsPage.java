@@ -16,6 +16,13 @@ public class contactsPage {
 	@FindBy( xpath= "//img[@alt='Create Contact...']")
 	private WebElement crateContactLink;
 	
+	@FindBy( xpath= "//input[@name='submit']")
+	private WebElement searchNowButton;
+	
+	public WebElement searchNowButton() {
+		return searchNowButton;
+	}
+	
 	public WebElement createContactLink() {
 		return crateContactLink;
 	}
